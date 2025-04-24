@@ -1,6 +1,6 @@
-## Panduan Instalasi WSL dan Docker di Windows
+## Panduan Instalasi WSL dan Docker di Windows dan Ubuntu
 
-### **Langkah 1: Aktifkan WSL dan Virtual Machine Platform**
+### **Langkah 1: Aktifkan WSL dan Virtual Machine Platform (Windows)**
 1. **Buka PowerShell sebagai Administrator**.
 2. Jalankan perintah berikut untuk mengaktifkan WSL dan Virtual Machine Platform:
    ```powershell
@@ -25,8 +25,10 @@
 
 ---
 
-### **Langkah 2: Instalasi dan Konfigurasi Docker di WSL**
-1. **Update Sistem di Distro Linux**:
+### **Langkah 2: Instalasi Docker di Ubuntu (Windows WSL dan Native Ubuntu)**
+
+#### **Ubuntu di WSL atau Native Ubuntu**
+1. **Update Sistem**:
    ```bash
    sudo apt update && sudo apt upgrade -y
    ```
@@ -53,9 +55,9 @@
      ```bash
      sudo usermod -aG docker $USER
      ```
-   - Logout dan login kembali ke terminal WSL agar perubahan grup diterapkan.
+   - Logout dan login kembali agar perubahan grup diterapkan.
 
-5. **Start Docker di WSL**:
+5. **Start Docker**:
    ```bash
    sudo service docker start
    ```
@@ -68,7 +70,7 @@
 
 ---
 
-### **Langkah 3: Integrasi Docker Desktop dengan WSL (Opsional)**
+### **Langkah 3: Integrasi Docker Desktop dengan WSL (Opsional - Windows)**
 1. **Instal Docker Desktop**:
    - Unduh dan instal [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
@@ -84,7 +86,7 @@
 ---
 
 ### **Tips**
-- **Cek Status WSL**:
+- **Cek Status WSL (Windows)**:
   ```powershell
   wsl --list --verbose
   ```
